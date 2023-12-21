@@ -1,0 +1,46 @@
+@import '../../container.css';
+
+.services {
+    overflow: hidden;
+    margin: 0 0 150px;
+}
+
+.title {
+    font-size: 350px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    translate: -50% 0;
+    width: 110%;
+    margin-bottom: -120px;
+}
+
+.servicesList {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    z-index: 1;
+}
+
+.servicesList li {
+    width: 100%;
+    min-height: 390px;
+    padding: 35px 38px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%, rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(20px);
+}
+.itemTitle {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+.desc {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .45;
+}

@@ -1,0 +1,7 @@
+:root {
+    --body-color: #1b1b1b;
+    --text-gray: #C8C8C8;
+    --bg-gray: rgba(255, 255, 255, 0.08);
+    --border-gray: rgba(255, 255, 255, 0.12);
+    --green: linear-gradient(180deg, #94DCBC 0%, #7DCFB0 100%);
+}

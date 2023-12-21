@@ -1,0 +1,28 @@
+@import "./variables.css";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--body-color);
+    color: white;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+    background-position: center center;
+    min-height: calc(100vh + 1px);
+}
+
+a,
+button {
+    transition: .25s;
+}

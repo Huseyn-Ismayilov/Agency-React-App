@@ -1,0 +1,71 @@
+@import '../../container.css';
+
+.SelectedWorks {
+    margin: 100px 0;
+}
+
+.sectionTitle {
+    padding-bottom: 34px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.sectionTitle h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.listItem {
+    gap: 50px;
+    padding: 45px 0;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.container {
+    display: flex;
+
+}
+
+.content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 110px;
+}
+
+.content h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 6px;
+}
+
+.content h4 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.image {
+    width: 52%;
+}
+
+.image img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.viewProject {
+    padding: 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    border: 1px solid var(--border-gray);
+    border-radius: 16px;
+    color: white;
+}
+
+.viewProject:hover {
+    background-color: var(--border-gray);
+    gap: 16px;
+}
