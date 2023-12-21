@@ -1,7 +1,12 @@
+import '../container.css'
+
 const About = () => {
     return (
         <>
-            <h1>asd</h1>
+            <div className="container">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab?</p>
+            </div>
         </>
     )
 }
