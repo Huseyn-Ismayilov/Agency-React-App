@@ -6,19 +6,19 @@ import SelectedWorks from '../components/Projects/Projects'
 const Home = () => {
 
     // let name = "Dark";
-    const [isToggle, setToggle] = useState(false)
+    // const [isToggle, setToggle] = useState(false)
 
-    const handleClick = () => {
-        setToggle(!isToggle);
-    }
+    // const handleClick = () => {
+    //     setToggle(!isToggle);
+    // }
     return (
         <>
-            <div>
+            {/* <div>
                 <h1>{isToggle ? "Dark" : "Light"}</h1>
                 <button onClick={handleClick}>
                     <h1>Toggle Button</h1>
                 </button>
-            </div>
+            </div> */}
             <Hero />
             <Services />
             <SelectedWorks />

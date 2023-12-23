@@ -11,7 +11,6 @@ import Home from './pages/HomePage';
 import About from './pages/AboutPage';
 import Services from './pages/ServicesPage';
 import Projects from './pages/ProjectsPage';
-import Header from './layouts/header/Header';
 
 // RootLayout
 import Root from './layouts/RootLayout';
