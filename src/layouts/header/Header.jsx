@@ -1,46 +1,39 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React from "react";
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css'
 import logo from '../../assets/logo.png';
 
 const Header = () => {
-    const [activeLink, setActiveLink] = useState();
-
-    const handleLinkClick = (index) => {
-        setActiveLink(index);
-    };
     const menuLinks = [
         { text: "Home", to: "/" },
-        { text: "Projects", to: "/Projects" },
+        { text: "Projects", to: "/projects" },
         { text: "Services", to: "/Services" },
         { text: "About", to: "/About" },
     ]
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <Link to="/" className={styles.logo}>
+                <NavLink to="/" className={styles.logo}>
                     <img src={logo} alt="" width="120" />
-                </Link>
+                </NavLink>
                 <ul className={styles.navbar}>
                     {menuLinks.map((item, index) => (
                         <li key={index}>
-                            <Link
+                            <NavLink
                                 to={item.to}
-                                onClick={() => handleLinkClick(index)}
-                                className={`${activeLink === index ? 'active' : ''} ${styles.navLink}`}
+                                className="navLink"
                             >
                                 {item.text}
-                            </Link>
+                            </NavLink>
                         </li>
                     ))}
-
                     <li>
                         <a className={`${styles.navLink} ${styles.quoteBtn}`} href="">Get a quote</a>
                     </li>
                 </ul>
             </div>
 
-        </div>
+        </div >
     )
 }
 

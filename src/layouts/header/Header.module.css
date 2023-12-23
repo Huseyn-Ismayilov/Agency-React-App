@@ -1,4 +1,4 @@
-/* @import '../../variables.css'; */
+@import '../../variables.css';
 @import '../../container.css';
 
 .header {
@@ -26,18 +26,8 @@
     align-items: center;
 }
 
-.navLink {
-    font-size: 17px;
-    font-weight: 500;
-    display: block;
-    padding: 10px 16px;
-    color: white;
 
-}
 
-.navbar .active {
-    background-color: red;
-}
 
 .navLink:not(.quoteBtn) {
     opacity: .7;
@@ -52,6 +42,10 @@
     color: black;
     border-radius: 11px;
     margin-left: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 16px;
 }
 
 .quoteBtn:hover {
