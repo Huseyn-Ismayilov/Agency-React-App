@@ -1,0 +1,47 @@
+.site_header {
+    padding: 18px 0;
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(15px);
+}
+
+.site_header .logo {
+    display: block;
+}
+
+.site_header .wrapper {
+    justify-content: space-between;
+}
+
+.site_header .navLink {
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    opacity: 0.7;
+}
+
+.navLink.active {
+    opacity: 1;
+}
+
+.site_header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.site_header .quoteBtn {
+    opacity: 1;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    margin-left: 16px;
+}
+
+.site_header .quoteBtn:hover {
+    opacity: 0.8;
+}

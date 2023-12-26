@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import styles from './Header.module.css'
 import logo from '../../assets/logo.png';
+import './Header.css'
 
 const Header = () => {
     const menuLinks = [
@@ -11,13 +11,13 @@ const Header = () => {
         { text: "About", to: "/About" },
     ]
     return (
-        <div className={styles.header}>
+        <header className="site_header">
             <div className="container">
                 <div className="wrapper">
-                    <NavLink to="/" className={styles.logo}>
+                    <NavLink to="/" className="site_logo">
                         <img src={logo} alt="" width="120" />
                     </NavLink>
-                    <ul className={styles.navbar}>
+                    <ul className="navbar">
                         {menuLinks.map((item, index) => (
                             <li key={index}>
                                 <NavLink
@@ -29,13 +29,13 @@ const Header = () => {
                             </li>
                         ))}
                         <li>
-                            <a className={`${styles.navLink} ${styles.quoteBtn}`} href="">Get a quote</a>
+                            <a className="navLink quoteBtn" href="">Get a quote</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-        </div >
+        </header >
     )
 }
 
