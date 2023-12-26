@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <>
             <div className={styles.services}>
-                <div className={styles.container}>
+                <div className="container">
                     <h1 className={styles.title}>Services</h1>
                     <ul className={styles.servicesList}>
                         <li>
