@@ -12,25 +12,27 @@ const Header = () => {
     ]
     return (
         <div className={styles.header}>
-            <div className={styles.container}>
-                <NavLink to="/" className={styles.logo}>
-                    <img src={logo} alt="" width="120" />
-                </NavLink>
-                <ul className={styles.navbar}>
-                    {menuLinks.map((item, index) => (
-                        <li key={index}>
-                            <NavLink
-                                to={item.to}
-                                className="navLink"
-                            >
-                                {item.text}
-                            </NavLink>
+            <div className="container">
+                <div className="wrapper">
+                    <NavLink to="/" className={styles.logo}>
+                        <img src={logo} alt="" width="120" />
+                    </NavLink>
+                    <ul className={styles.navbar}>
+                        {menuLinks.map((item, index) => (
+                            <li key={index}>
+                                <NavLink
+                                    to={item.to}
+                                    className="navLink"
+                                >
+                                    {item.text}
+                                </NavLink>
+                            </li>
+                        ))}
+                        <li>
+                            <a className={`${styles.navLink} ${styles.quoteBtn}`} href="">Get a quote</a>
                         </li>
-                    ))}
-                    <li>
-                        <a className={`${styles.navLink} ${styles.quoteBtn}`} href="">Get a quote</a>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
 
         </div >

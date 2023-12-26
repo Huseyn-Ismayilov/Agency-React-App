@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <>
             <div className={styles.hero}>
-                <div className={styles.container}>
+                <div className="container">
                     <div className={styles.content}>
                         <h1 className={styles.h1}>
                             Think. Design.

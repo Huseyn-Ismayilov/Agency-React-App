@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div className={styles.SelectedWorks}>
             <div className={styles.sectionTitle}>
-                <div className={styles.container}>
+                <div className="container">
                     <h1>Selected works.</h1>
                 </div>
             </div>

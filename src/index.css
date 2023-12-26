@@ -47,6 +47,11 @@ button {
     opacity: 1;
 }
 
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -96,4 +101,8 @@ button {
     .container {
         max-width: 1344px;
     }
+}
+
+._header_1l7zn_7 .wrapper {
+    justify-content: space-between;
 }
