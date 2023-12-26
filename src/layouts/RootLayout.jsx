@@ -11,11 +11,10 @@ const RootLayout = () => {
             </main>
             <footer>
                 <div className="container">
-                    <p>&copy; 2023 My Website</p>
+                    <p>&copy; 2024 My Website</p>
                 </div>
             </footer>
         </>
-
     );
 };
 
