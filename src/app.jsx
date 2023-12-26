@@ -15,6 +15,10 @@ import Projects from './pages/ProjectsPage';
 // RootLayout
 import Root from './layouts/RootLayout';
 
+// Css
+import './index.css';
+
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Root />}>
@@ -34,7 +38,8 @@ const App = () => {
     );
 };
 
-export default App;
+export default App 
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
