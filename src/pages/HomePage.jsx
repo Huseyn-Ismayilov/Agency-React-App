@@ -11,6 +11,21 @@ const Home = () => {
     // const handleClick = () => {
     //     setToggle(!isToggle);
     // }
+    let inputArray = ["apple", "orange", "banana", "apple", "banana", "grape"];
+
+    function uniqArray(arr) {
+        let uniqueSet = new Set(arr);
+
+        let uniqueArray = [...uniqueSet];
+
+        return uniqueArray;
+    }
+
+    // Örnek kullanım
+    let resultArray = uniqArray(inputArray);
+
+    console.log(resultArray);
+
     return (
         <>
             {/* <div>
@@ -19,6 +34,7 @@ const Home = () => {
                     <h1>Toggle Button</h1>
                 </button>
             </div> */}
+
             <Hero />
             <Services />
             <SelectedWorks />

@@ -1,4 +1,3 @@
-import '../container.css'
 
 const About = () => {
     return (

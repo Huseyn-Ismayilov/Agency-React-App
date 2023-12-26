@@ -1,4 +1,10 @@
-@import "./variables.css";
+:root {
+    --body-color: #1b1b1b;
+    --text-gray: #C8C8C8;
+    --bg-gray: rgba(255, 255, 255, 0.08);
+    --border-gray: rgba(255, 255, 255, 0.12);
+    --green: linear-gradient(180deg, #94DCBC 0%, #7DCFB0 100%);
+}
 
 *,
 *::before,
@@ -39,4 +45,55 @@ button {
 
 .navLink.active {
     opacity: 1;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 3.29vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 100%;
+        padding: 0 38px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 950px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1120px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1344px;
+    }
 }
